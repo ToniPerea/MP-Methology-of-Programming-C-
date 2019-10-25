@@ -1,0 +1,341 @@
+\hypertarget{classimagen}{}\section{Referencia de la Clase imagen}
+\label{classimagen}\index{imagen@{imagen}}
+
+
+{\ttfamily \#include $<$imagen.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimagen_a3a8a8d82546e8fc325c385e2dc4b00e6}{imagen}} ()
+\item 
+\mbox{\hyperlink{classimagen_aeec0ca5171e8a1eac8c20c31e74d538d}{imagen}} (int filas, int columnas)
+\item 
+\mbox{\hyperlink{classimagen_a4e891c5bfbe09261dc02660879e37bea}{imagen}} (const \mbox{\hyperlink{classimagen}{imagen}} \&original)
+\item 
+\mbox{\hyperlink{classimagen_a1efdf77f6e6af0e528f0b7e8665d0060}{$\sim$imagen}} ()
+\item 
+\mbox{\hyperlink{classimagen_a61cb9de8b7733a8f2e53a37e45105785}{imagen}} (color $\ast$$\ast$otro, int anchura, int altura, char $\ast$$\ast$com, unsigned short num\+\_\+com, string t)
+\item 
+int \mbox{\hyperlink{classimagen_aae8a3fc5fd7e983c8892b89e6d0473ea}{get\+Altura}} ()
+\item 
+int \mbox{\hyperlink{classimagen_aacfbb6e3b502068e9d18d36f730c60d3}{get\+Anchura}} ()
+\item 
+unsigned short \mbox{\hyperlink{classimagen_a47971a2dd948cd32e913a0744e24ae9f}{get\+Numero\+Comentarios}} ()
+\item 
+int \mbox{\hyperlink{classimagen_a89ffc85c3f945b94edc202afac6bf315}{get\+Max\+Grises}} ()
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{classimagen_ac4d0f4eb1e005e05ff6df48ad5f8b18d}{get\+Comentarios}} ()
+\item 
+color $\ast$$\ast$ \mbox{\hyperlink{classimagen_ab8ddad8f0c6d8c8c66d9f773e2c0e98b}{get\+Matriz}} ()
+\item 
+string \mbox{\hyperlink{classimagen_aef9dea6dc4d170ecc535edb48159113d}{get\+Tipo}} ()
+\item 
+void \mbox{\hyperlink{classimagen_ac1cfc220563159e05f7cd0c46bd1d131}{set\+Altura}} (int a)
+\item 
+void \mbox{\hyperlink{classimagen_ad3779670d1436bbe5fd566458947aaeb}{set\+Anchura}} (int a)
+\item 
+void \mbox{\hyperlink{classimagen_a3d382c3cc56a3427f5cadf2b63cb6177}{set\+Numero\+Comentarios}} (unsigned short n)
+\item 
+void \mbox{\hyperlink{classimagen_a5503582c1b33a02085a0ffc4eabe9cdc}{set\+Max\+Grises}} (int n)
+\item 
+void \mbox{\hyperlink{classimagen_ae6a817d007321a39b9546f0ce665b00c}{set\+Comentarios}} (vector$<$ string $>$ otro)
+\item 
+void \mbox{\hyperlink{classimagen_afbdd4a238e1e6f6425c37ac1f0facdce}{set\+Matriz}} (color $\ast$$\ast$otro)
+\item 
+void \mbox{\hyperlink{classimagen_a6b714d47d961cfe6da7839741241fc74}{set\+Tipo}} (string t)
+\item 
+\mbox{\hyperlink{classimagen}{imagen}} \& \mbox{\hyperlink{classimagen_a7367b737677651301f6d55ac74600231}{operator=}} (const \mbox{\hyperlink{classimagen}{imagen}} \&original)
+\item 
+void \mbox{\hyperlink{classimagen_aafa7e744462222463dcb86ef29a4b2f3}{rellenar}} (color c)
+\item 
+void \mbox{\hyperlink{classimagen_a92e9aee45eb7aa937a5537e8bde79fcd}{guardar\+Imagen}} (string filename)
+\item 
+void \mbox{\hyperlink{classimagen_a587b3c9a1e63129e1812705af4a1ae97}{collage}} (\mbox{\hyperlink{classimagen}{imagen}} otra, int x, int y)
+\item 
+void \mbox{\hyperlink{classimagen_a981a798f16223854c4b33aebdb63405a}{contraste}} (int max, int min)
+\item 
+void \mbox{\hyperlink{classimagen_aa44517488f0c73b2bf661782b95b1ada}{cambiar\+Comentarios}} (vector$<$ string $>$ nuevo)
+\item 
+void \mbox{\hyperlink{classimagen_ae8d80100da8542d0e20269edc0b9dc39}{cambiar\+Comentarios}} (string nuevo)
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classimagen_abf871b090237f08fc761a050c7d55f86}\label{classimagen_abf871b090237f08fc761a050c7d55f86}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \mbox{\hyperlink{classimagen}{imagen}} \&original)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase Imagen 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classimagen_a3a8a8d82546e8fc325c385e2dc4b00e6}\label{classimagen_a3a8a8d82546e8fc325c385e2dc4b00e6}} 
+\index{imagen@{imagen}!imagen@{imagen}}
+\index{imagen@{imagen}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{imagen()}{imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily imagen\+::imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor por defecto \+:\+: Inicializa filas y columnas, número de comentarios y el máximo de grises a 0. Inicializa la matriz de píxeles nula, el vector de comentarios nulo y la cadena mágica de identificación del tipo de imagen a desconocido. \mbox{\Hypertarget{classimagen_aeec0ca5171e8a1eac8c20c31e74d538d}\label{classimagen_aeec0ca5171e8a1eac8c20c31e74d538d}} 
+\index{imagen@{imagen}!imagen@{imagen}}
+\index{imagen@{imagen}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{imagen()}{imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily imagen\+::imagen (\begin{DoxyParamCaption}\item[{int}]{filas,  }\item[{int}]{columnas }\end{DoxyParamCaption})}
+
+Constructor por parámetros \+:\+: Inicializa las filas y las columnas al mismo número de filas y columnas que se les pasa mediante argumentos. Reserva tantas filas y columnas en la matriz como se le indica. Mantiene el vector nulo, la cadena mágica de identificación del tipo de fichero a desconocido y el número de comentarios no lo modifica. 
+\begin{DoxyParams}{Parámetros}
+{\em filas} & número de filas a reservar \\
+\hline
+{\em columnas} & número de columnas a reservar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a4e891c5bfbe09261dc02660879e37bea}\label{classimagen_a4e891c5bfbe09261dc02660879e37bea}} 
+\index{imagen@{imagen}!imagen@{imagen}}
+\index{imagen@{imagen}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{imagen()}{imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily imagen\+::imagen (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classimagen}{imagen}} \&}]{original }\end{DoxyParamCaption})}
+
+Constructor de copia \+:\+: Inicializa filas y columnas, número de comentarios y el máximo de grises a 0. Mantiene la matriz de píxeles nula y el vector también. 
+\begin{DoxyParams}{Parámetros}
+{\em original} & objeto imagen del cual se realizara la copia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a1efdf77f6e6af0e528f0b7e8665d0060}\label{classimagen_a1efdf77f6e6af0e528f0b7e8665d0060}} 
+\index{imagen@{imagen}!````~imagen@{$\sim$imagen}}
+\index{````~imagen@{$\sim$imagen}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{$\sim$imagen()}{~imagen()}}
+{\footnotesize\ttfamily imagen\+::$\sim$imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor \+:\+: Se encargar de eliminar la memoria reservada de un objeto imagen. \mbox{\Hypertarget{classimagen_a61cb9de8b7733a8f2e53a37e45105785}\label{classimagen_a61cb9de8b7733a8f2e53a37e45105785}} 
+\index{imagen@{imagen}!imagen@{imagen}}
+\index{imagen@{imagen}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{imagen()}{imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily imagen\+::imagen (\begin{DoxyParamCaption}\item[{color $\ast$$\ast$}]{otro,  }\item[{int}]{anchura,  }\item[{int}]{altura,  }\item[{char $\ast$$\ast$}]{com,  }\item[{unsigned short}]{num\+\_\+com,  }\item[{string}]{t }\end{DoxyParamCaption})}
+
+Constructor por parámetros \+:\+: Inicializa un objeto de tipo imagen con los datos recibidos. 
+\begin{DoxyParams}{Parámetros}
+{\em otro} & Matriz que contienes los valores de los píxeles de la imagen. \\
+\hline
+{\em anchura} & Valor entero que guarda el valor de la anchura de la imagen. \\
+\hline
+{\em altura} & Valor entero que guarda el valor de la altura de la imagen. \\
+\hline
+{\em com} & Doble puntero que almacena los comentarios de la imagen. \\
+\hline
+{\em num\+\_\+com} & Guarda el número de comentarios que hay. \\
+\hline
+{\em t} & Guarda el tipo de la imagen \char`\"{}\+P5\char`\"{} y \char`\"{}\+P2\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classimagen_aa44517488f0c73b2bf661782b95b1ada}\label{classimagen_aa44517488f0c73b2bf661782b95b1ada}} 
+\index{imagen@{imagen}!cambiar\+Comentarios@{cambiar\+Comentarios}}
+\index{cambiar\+Comentarios@{cambiar\+Comentarios}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{cambiar\+Comentarios()}{cambiarComentarios()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void imagen\+::cambiar\+Comentarios (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{nuevo }\end{DoxyParamCaption})}
+
+Cambia los comentarios por el conjunto de comentarios recibidos en formato de vector Se usará cuando se conozca a priori los comentarios. 
+\begin{DoxyParams}{Parámetros}
+{\em nuevo} & Es el vector string que recibe con el comentario a sustituir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_ae8d80100da8542d0e20269edc0b9dc39}\label{classimagen_ae8d80100da8542d0e20269edc0b9dc39}} 
+\index{imagen@{imagen}!cambiar\+Comentarios@{cambiar\+Comentarios}}
+\index{cambiar\+Comentarios@{cambiar\+Comentarios}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{cambiar\+Comentarios()}{cambiarComentarios()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void imagen\+::cambiar\+Comentarios (\begin{DoxyParamCaption}\item[{string}]{nuevo }\end{DoxyParamCaption})}
+
+Cambia los comentarios por el comentario recibido 
+\begin{DoxyParams}{Parámetros}
+{\em nuevo} & Es el string que recibe con el comentario a sustituir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a587b3c9a1e63129e1812705af4a1ae97}\label{classimagen_a587b3c9a1e63129e1812705af4a1ae97}} 
+\index{imagen@{imagen}!collage@{collage}}
+\index{collage@{collage}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{collage()}{collage()}}
+{\footnotesize\ttfamily void imagen\+::collage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classimagen}{imagen}}}]{otra,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Realiza una superposición de una imagen sobre otra 
+\begin{DoxyParams}{Parámetros}
+{\em otra} & Es la imagen que se va a superponer \\
+\hline
+{\em x} & Es un entero que indica la posicion en el eje de abcisas sobre el que se aplica la superposición \\
+\hline
+{\em y} & Es un entero que indica la posicion en el eje de ordenadas sobre el que se aplica la superposición \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a981a798f16223854c4b33aebdb63405a}\label{classimagen_a981a798f16223854c4b33aebdb63405a}} 
+\index{imagen@{imagen}!contraste@{contraste}}
+\index{contraste@{contraste}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{contraste()}{contraste()}}
+{\footnotesize\ttfamily void imagen\+::contraste (\begin{DoxyParamCaption}\item[{int}]{max,  }\item[{int}]{min }\end{DoxyParamCaption})}
+
+Realiza un contraste en la imagen 
+\begin{DoxyParams}{Parámetros}
+{\em max} & Es el máximo de contraste de la imagen. \\
+\hline
+{\em min} & Es el máximo de contraste de la imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_aae8a3fc5fd7e983c8892b89e6d0473ea}\label{classimagen_aae8a3fc5fd7e983c8892b89e6d0473ea}} 
+\index{imagen@{imagen}!get\+Altura@{get\+Altura}}
+\index{get\+Altura@{get\+Altura}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{get\+Altura()}{getAltura()}}
+{\footnotesize\ttfamily int imagen\+::get\+Altura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve la altura del objeto imagen deseado. \mbox{\Hypertarget{classimagen_aacfbb6e3b502068e9d18d36f730c60d3}\label{classimagen_aacfbb6e3b502068e9d18d36f730c60d3}} 
+\index{imagen@{imagen}!get\+Anchura@{get\+Anchura}}
+\index{get\+Anchura@{get\+Anchura}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{get\+Anchura()}{getAnchura()}}
+{\footnotesize\ttfamily int imagen\+::get\+Anchura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve la anchura del objeto imagen deseado. \mbox{\Hypertarget{classimagen_ac4d0f4eb1e005e05ff6df48ad5f8b18d}\label{classimagen_ac4d0f4eb1e005e05ff6df48ad5f8b18d}} 
+\index{imagen@{imagen}!get\+Comentarios@{get\+Comentarios}}
+\index{get\+Comentarios@{get\+Comentarios}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{get\+Comentarios()}{getComentarios()}}
+{\footnotesize\ttfamily vector$<$ string $>$ imagen\+::get\+Comentarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve los comentarios del objeto imagen deseado. \mbox{\Hypertarget{classimagen_ab8ddad8f0c6d8c8c66d9f773e2c0e98b}\label{classimagen_ab8ddad8f0c6d8c8c66d9f773e2c0e98b}} 
+\index{imagen@{imagen}!get\+Matriz@{get\+Matriz}}
+\index{get\+Matriz@{get\+Matriz}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{get\+Matriz()}{getMatriz()}}
+{\footnotesize\ttfamily color $\ast$$\ast$ imagen\+::get\+Matriz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve la matriz del objeto imagen deseado. \mbox{\Hypertarget{classimagen_a89ffc85c3f945b94edc202afac6bf315}\label{classimagen_a89ffc85c3f945b94edc202afac6bf315}} 
+\index{imagen@{imagen}!get\+Max\+Grises@{get\+Max\+Grises}}
+\index{get\+Max\+Grises@{get\+Max\+Grises}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{get\+Max\+Grises()}{getMaxGrises()}}
+{\footnotesize\ttfamily int imagen\+::get\+Max\+Grises (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve el número máximo de grises del objeto imagen deseado. \mbox{\Hypertarget{classimagen_a47971a2dd948cd32e913a0744e24ae9f}\label{classimagen_a47971a2dd948cd32e913a0744e24ae9f}} 
+\index{imagen@{imagen}!get\+Numero\+Comentarios@{get\+Numero\+Comentarios}}
+\index{get\+Numero\+Comentarios@{get\+Numero\+Comentarios}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{get\+Numero\+Comentarios()}{getNumeroComentarios()}}
+{\footnotesize\ttfamily unsigned short imagen\+::get\+Numero\+Comentarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve el número de comentarios del objeto imagen deseado. \mbox{\Hypertarget{classimagen_aef9dea6dc4d170ecc535edb48159113d}\label{classimagen_aef9dea6dc4d170ecc535edb48159113d}} 
+\index{imagen@{imagen}!get\+Tipo@{get\+Tipo}}
+\index{get\+Tipo@{get\+Tipo}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{get\+Tipo()}{getTipo()}}
+{\footnotesize\ttfamily string imagen\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve el tipo(\+P5 o P2) del objeto imagen deseado. \mbox{\Hypertarget{classimagen_a92e9aee45eb7aa937a5537e8bde79fcd}\label{classimagen_a92e9aee45eb7aa937a5537e8bde79fcd}} 
+\index{imagen@{imagen}!guardar\+Imagen@{guardar\+Imagen}}
+\index{guardar\+Imagen@{guardar\+Imagen}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{guardar\+Imagen()}{guardarImagen()}}
+{\footnotesize\ttfamily void imagen\+::guardar\+Imagen (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+Vuelca el contenido del nuestra a imagen en un archivo descrito por filename 
+\begin{DoxyParams}{Parámetros}
+{\em filename} & Es el nombre del archivo donde se volcarán los datos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a7367b737677651301f6d55ac74600231}\label{classimagen_a7367b737677651301f6d55ac74600231}} 
+\index{imagen@{imagen}!operator=@{operator=}}
+\index{operator=@{operator=}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classimagen}{imagen}} \& imagen\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classimagen}{imagen}} \&}]{original }\end{DoxyParamCaption})}
+
+Sobrecarga del operador de asignación. 
+\begin{DoxyParams}{Parámetros}
+{\em original} & Sobrecarga el operador de asignación para que se pueda usar entre objetos de tipo imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_aafa7e744462222463dcb86ef29a4b2f3}\label{classimagen_aafa7e744462222463dcb86ef29a4b2f3}} 
+\index{imagen@{imagen}!rellenar@{rellenar}}
+\index{rellenar@{rellenar}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{rellenar()}{rellenar()}}
+{\footnotesize\ttfamily void imagen\+::rellenar (\begin{DoxyParamCaption}\item[{color}]{c }\end{DoxyParamCaption})}
+
+Rellana todos los píxeles de una imagen del valor introducido. 
+\begin{DoxyParams}{Parámetros}
+{\em c} & Es el valor del pixel por el que sustituirán todos los píxeles. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_ac1cfc220563159e05f7cd0c46bd1d131}\label{classimagen_ac1cfc220563159e05f7cd0c46bd1d131}} 
+\index{imagen@{imagen}!set\+Altura@{set\+Altura}}
+\index{set\+Altura@{set\+Altura}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{set\+Altura()}{setAltura()}}
+{\footnotesize\ttfamily void imagen\+::set\+Altura (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+Modifica la altura del objeto imagen deseado. 
+\begin{DoxyParams}{Parámetros}
+{\em a} & Es un entero que recibe la función y sustituirá a la altura de la imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_ad3779670d1436bbe5fd566458947aaeb}\label{classimagen_ad3779670d1436bbe5fd566458947aaeb}} 
+\index{imagen@{imagen}!set\+Anchura@{set\+Anchura}}
+\index{set\+Anchura@{set\+Anchura}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{set\+Anchura()}{setAnchura()}}
+{\footnotesize\ttfamily void imagen\+::set\+Anchura (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+Modifica la anchura del objeto imagen deseado. 
+\begin{DoxyParams}{Parámetros}
+{\em a} & Es un entero que recibe la función y sustituirá a la anchura de la imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_ae6a817d007321a39b9546f0ce665b00c}\label{classimagen_ae6a817d007321a39b9546f0ce665b00c}} 
+\index{imagen@{imagen}!set\+Comentarios@{set\+Comentarios}}
+\index{set\+Comentarios@{set\+Comentarios}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{set\+Comentarios()}{setComentarios()}}
+{\footnotesize\ttfamily void imagen\+::set\+Comentarios (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{otro }\end{DoxyParamCaption})}
+
+Modifica los comentarios del objeto imagen deseado. 
+\begin{DoxyParams}{Parámetros}
+{\em otro} & Es un vector de string que recibe la función y sustituirá los comentarios de la imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_afbdd4a238e1e6f6425c37ac1f0facdce}\label{classimagen_afbdd4a238e1e6f6425c37ac1f0facdce}} 
+\index{imagen@{imagen}!set\+Matriz@{set\+Matriz}}
+\index{set\+Matriz@{set\+Matriz}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{set\+Matriz()}{setMatriz()}}
+{\footnotesize\ttfamily void imagen\+::set\+Matriz (\begin{DoxyParamCaption}\item[{color $\ast$$\ast$}]{otro }\end{DoxyParamCaption})}
+
+Modifica la matriz del objeto imagen deseado. 
+\begin{DoxyParams}{Parámetros}
+{\em otro} & Valor tipo color con doble puntero recibe la función y sustituirá la matriz de la imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a5503582c1b33a02085a0ffc4eabe9cdc}\label{classimagen_a5503582c1b33a02085a0ffc4eabe9cdc}} 
+\index{imagen@{imagen}!set\+Max\+Grises@{set\+Max\+Grises}}
+\index{set\+Max\+Grises@{set\+Max\+Grises}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{set\+Max\+Grises()}{setMaxGrises()}}
+{\footnotesize\ttfamily void imagen\+::set\+Max\+Grises (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+Modifica el número máximo de grises del objeto imagen deseado. 
+\begin{DoxyParams}{Parámetros}
+{\em n} & Es un entero que recibe la función y sustituirá el número máximo de grises de la imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a3d382c3cc56a3427f5cadf2b63cb6177}\label{classimagen_a3d382c3cc56a3427f5cadf2b63cb6177}} 
+\index{imagen@{imagen}!set\+Numero\+Comentarios@{set\+Numero\+Comentarios}}
+\index{set\+Numero\+Comentarios@{set\+Numero\+Comentarios}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{set\+Numero\+Comentarios()}{setNumeroComentarios()}}
+{\footnotesize\ttfamily void imagen\+::set\+Numero\+Comentarios (\begin{DoxyParamCaption}\item[{unsigned short}]{n }\end{DoxyParamCaption})}
+
+Modifica el número de comentarios del objeto imagen deseado. 
+\begin{DoxyParams}{Parámetros}
+{\em n} & Es un entero que recibe la función y sustituirá al número de comentarios de la imagen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagen_a6b714d47d961cfe6da7839741241fc74}\label{classimagen_a6b714d47d961cfe6da7839741241fc74}} 
+\index{imagen@{imagen}!set\+Tipo@{set\+Tipo}}
+\index{set\+Tipo@{set\+Tipo}!imagen@{imagen}}
+\subsubsection{\texorpdfstring{set\+Tipo()}{setTipo()}}
+{\footnotesize\ttfamily void imagen\+::set\+Tipo (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+
+Modifica el tipo(\+P5 o P2) del objeto imagen deseado. 
+\begin{DoxyParams}{Parámetros}
+{\em t} & Es un string que recibe la función y sustituirá el tipo de la imagen. \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/antonioperea/\+Desktop/proyecto\+\_\+mp/include/imagen.\+h\item 
+/\+Users/antonioperea/\+Desktop/proyecto\+\_\+mp/src/imagen.\+cpp\end{DoxyCompactItemize}
