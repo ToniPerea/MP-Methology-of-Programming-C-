@@ -1,0 +1,15 @@
+5
+Melon
+Papaya
+Naranja
+Kiwi
+Platano
+
+6
+Platano
+Fresa
+Naranja
+Limon
+Sandia
+Pomelo
+ 
